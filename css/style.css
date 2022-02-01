@@ -1,0 +1,520 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* el nav */
+.navMenu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p {
+    color: whitesmoke;
+}
+
+li {
+    margin: 20px;
+    padding: 10px;
+    color: whitesmoke;
+    border-style: solid;
+    background-color: gray;
+    list-style: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+/* hasta aca el nav */
+
+/* grid de la pagina index */
+
+.bodyIndex {
+    background: url(../images/berserkp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#grid1 {
+    display: grid;
+    grid-template-areas:
+
+
+        "headingindexUno"
+        "indexpUno"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 7.5vh 100vh 2vh;
+
+}
+
+.parrafoIndex-uno {
+    grid-area: indexpUno;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke
+}
+
+.headingIndex {
+    grid-area: headingindexUno;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    margin: 2.5rem;
+}
+
+.bodyIndex .navMenu {
+    background-image: linear-gradient(to bottom right, #0f0f0f, #3E3E3E);
+}
+
+/* aca termina */
+
+body {
+    font-family: myFirstFont;
+    background-image: linear-gradient(to bottom right, #0f0f0f, #3E3E3E);
+
+}
+
+
+/* El grid de la pagina que_es */
+#galeria {
+    display: grid;
+    grid-template-areas:
+        "galeriaUno galeriaDos"
+        "galeriaTres galeriaTres"
+        "galeriaCinco galeriaCinco"
+        "galeriaSeis galeriaCuatro"
+        "galeriaSiete galeriaOcho"
+
+    ;
+    grid-template-columns: 2fr 3fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+#galeria img {
+    width: 100%;
+    height: auto;
+    border: solid 2px white;
+}
+
+.galeriaUno {
+    grid-area: galeriaUno;
+}
+
+.galeriaDos {
+    grid-area: galeriaDos;
+}
+
+.galeriaTres {
+    grid-area: galeriaTres;
+}
+
+.galeriaCuatro {
+    grid-area: galeriaCuatro;
+}
+
+.galeraCinco {
+    grid-area: galeriaCinco;
+}
+
+.galeriaSeis {
+    grid-area: galeriaSeis;
+}
+
+.galeriaSiete {
+    grid-area: galeriaSiete;
+}
+
+.galeriaOcho {
+    grid-area: galeriaOcho;
+}
+
+/* aca termina */
+
+
+/* Que Manga pagina y grid */
+
+.tokyoVolimg {
+    grid-area: tokyoImg;
+}
+
+.divTokyo {
+    grid-area: divTokyo;
+}
+
+.berserkVolimg {
+    grid-area: berserkImg;
+}
+
+.divBerserk {
+    grid-area: divBerserk;
+}
+
+.chainsawVolimg {
+    grid-area: chainsawImg;
+}
+
+
+.divChainsaw {
+    grid-area: divChainsaw;
+}
+
+.bokuVolimg {
+    grid-area: bokuImg;
+}
+
+.divBoku {
+    grid-area: divBoku;
+}
+
+
+.sectionCatalogo {
+    display: grid;
+    grid-template-areas:
+        "tokyoImg divTokyo"
+        "tokyoImg divTokyo"
+        "berserkImg divBerserk"
+        "berserkImg divBerserk"
+        "chainsawImg divChainsaw"
+        "chainsawImg divChainsaw"
+        "bokuImg divBoku"
+        "bokuImg divBoku"
+    ;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 2rem;
+    row-gap: 2rem;
+}
+
+.sectionCatalogo h3 {
+    color: whitesmoke;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.sectionCatalogo h4 {
+    color: whitesmoke;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.sectionCatalogo img {
+    width: 100%;
+    height: auto;
+    border: solid 2px white;
+}
+
+.sectionCatalogo p {
+    padding: 2rem;
+
+}
+
+
+
+
+/* pagina compra */
+fieldset {
+    color: whitesmoke;
+    padding: 5%;
+}
+
+.input {
+    height: 20%;
+    width: 20%;
+    display: block;
+    margin: 0;
+}
+
+.labels {
+    width: 5%;
+    height: 5%;
+}
+
+
+
+
+
+/* pagina contacto */
+
+.bodyContacto h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 4vh;
+}
+
+.bodyContacto h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3vh;
+}
+
+.bodyContacto p {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2vh;
+}
+
+
+.hdosDiv {
+    grid-area: hdosDiv;
+}
+
+.divSucursalUno {
+    grid-area: divSucursalUno;
+}
+
+.divSucursalDos {
+    grid-area: divSucursalDos;
+}
+
+.divEmail {
+    grid-area: divEmail;
+}
+
+.divWhatsapp {
+    grid-area: divWhatsapp;
+}
+
+body .divContacto {
+    display: grid;
+    grid-row: auto;
+    grid-template-areas:
+        "hdosDiv"
+        "divSucursalUno"
+        "divSucursalDos"
+        "divEmail"
+        "divWhatsapp"
+    ;
+    grid-gap: 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* aca termina la pagina contacto */
+
+/* letra de las paginas */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 5px;
+}
+
+iframe {
+    display: block;
+    margin: auto auto;
+}
+
+
+
+
+
+/* Smartphone */
+
+@media (max-width: 479px) {
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    /* responsive Galeria */
+    #galeria {
+        display: grid;
+        grid-template-areas:
+            "textoUno"
+            "galeriaUno"
+            "textoDos"
+            "galeriaDos"
+            "textoTres"
+            "galeriaTres"
+            "textoCuatro"
+            "galeriaCuatro"
+        ;
+        grid-template-columns: 100%;
+        row-gap: 3rem;
+
+    }
+
+    #galeria img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* responsive Contacto */
+    body .sectionContacto {
+        display: grid;
+        grid-row: auto;
+
+        grid-template-areas:
+            "headingdosUno"
+            "headingtresUno"
+            "direccionUno"
+            "headingtresDos"
+            "direccionDos"
+            "headingdosDos"
+            "headingtresTres"
+            "parrafoUno"
+            "headingtresCuatro"
+            "parrafoDos"
+            "imagenUno"
+        ;
+        grid-template-columns: 100%;
+        grid-gap: 3rem;
+        
+    }
+
+
+    
+
+    /* responsive Index */
+    #grid1 {
+        display: grid;
+        grid-template-areas:
+            "headingindexUno"
+            "indexpUno"
+        ;
+        grid-template-columns: 50%;
+        grid-template-rows: 7.5vh 100vh 2vh;
+
+    }
+
+    .bodyIndex {
+        background-image: url(../images/berserkp.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* responsive catalogo */
+    .sectionCatalogo {
+        display: grid;
+        grid-template-areas:
+            "tokyoImg "
+            "divTokyo"
+            "berserkImg "
+            "divBerserk"
+            "chainsawImg"
+            "divChainsaw"
+            "bokuImg"
+            "divBoku"
+        ;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 2fr;
+        padding: 2rem;
+        row-gap: 2rem;
+    }
+
+
+}
+
+
+/* Tablet */
+@media (min-width:480px) and (max-width: 1024px) {
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    /* responsive Index */
+    #grid1 {
+        display: grid;
+        grid-template-areas:
+            "headingindexUno"
+            "indexpUno"
+        ;
+        grid-template-columns: 50%;
+        grid-template-rows: 7.5vh 100vh 2vh;
+
+    }
+
+    .bodyIndex {
+        background-image: url(../images/berserkp.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    /* responsive galeria */
+    #galeria {
+        display: grid;
+        grid-template-areas:
+            "textoUno"
+            "galeriaUno"
+            "textoDos"
+            "galeriaDos"
+            "textoTres"
+            "galeriaTres"
+            "textoCuatro"
+            "galeriaCuatro"
+        ;
+        grid-template-columns: 100%;
+        row-gap: 3rem;
+
+    }
+
+    /* responsive contacto */
+    body .sectionContacto {
+        display: grid;
+        grid-row: auto;
+
+        grid-template-areas:
+            "headingdosUno"
+            "headingtresUno"
+            "direccionUno"
+            "headingtresDos"
+            "direccionDos"
+            "headingdosDos"
+            "headingtresTres"
+            "parrafoUno"
+            "headingtresCuatro"
+            "parrafoDos"
+            "imagenUno"
+        ;
+        grid-template-columns: 100%;
+        grid-gap: 3rem;
+    }
+
+    /* responsive catalogo */
+    .sectionCatalogo {
+        display: grid;
+        grid-template-areas:
+            "tokyoImg "
+            "divTokyo"
+            "berserkImg "
+            "divBerserk"
+            "chainsawImg"
+            "divChainsaw"
+            "bokuImg"
+            "divBoku"
+        ;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 2fr;
+        padding: 2rem;
+        row-gap: 2rem;
+    }
+
+
+}
