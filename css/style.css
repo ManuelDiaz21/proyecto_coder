@@ -14,6 +14,7 @@
 
 p {
     color: whitesmoke;
+    display: flex;
 }
 
 li {
@@ -24,11 +25,13 @@ li {
     background-color: gray;
     list-style: none;
     text-align: center;
+    display: flex;
 }
 
 a {
     text-decoration: none;
-    color: aquamarine;
+   background-image: radial-gradient(gray);
+    display: flex;
 }
 
 /* hasta aca el nav */
@@ -102,38 +105,47 @@ body {
     width: 100%;
     height: auto;
     border: solid 2px white;
+    display: flex;
 }
 
 .galeriaUno {
     grid-area: galeriaUno;
+    display: flex;
 }
 
 .galeriaDos {
     grid-area: galeriaDos;
+    display: flex;
 }
 
 .galeriaTres {
     grid-area: galeriaTres;
+    display: flex;
 }
 
 .galeriaCuatro {
     grid-area: galeriaCuatro;
+    display: flex;
 }
 
 .galeraCinco {
     grid-area: galeriaCinco;
+    display: flex;
 }
 
 .galeriaSeis {
     grid-area: galeriaSeis;
+    display: flex;
 }
 
 .galeriaSiete {
     grid-area: galeriaSiete;
+    display: flex;
 }
 
 .galeriaOcho {
     grid-area: galeriaOcho;
+    display: flex;
 }
 
 /* aca termina */
@@ -143,35 +155,44 @@ body {
 
 .tokyoVolimg {
     grid-area: tokyoImg;
+    display: flex;
+
 }
 
 .divTokyo {
     grid-area: divTokyo;
+
 }
 
 .berserkVolimg {
     grid-area: berserkImg;
+    display: flex;
 }
 
 .divBerserk {
     grid-area: divBerserk;
+    
 }
 
 .chainsawVolimg {
     grid-area: chainsawImg;
+    display: flex;
 }
 
 
 .divChainsaw {
     grid-area: divChainsaw;
+    
 }
 
 .bokuVolimg {
     grid-area: bokuImg;
+    display: flex;
 }
 
 .divBoku {
     grid-area: divBoku;
+    
 }
 
 
@@ -197,22 +218,34 @@ body {
     color: whitesmoke;
     padding: 2rem;
     font-size: 3rem;
+   
 }
 
 .sectionCatalogo h4 {
     color: whitesmoke;
     padding: 2rem;
     font-size: 2rem;
+    
 }
 
 .sectionCatalogo img {
     width: 100%;
     height: auto;
     border: solid 2px white;
+    transition: ;
+    
 }
+.sectionCatalogo img:hover {
+    border: solid 10px gray;
+    transform: scale(1.05 , 1.05);
+    transition-duration: 1.5s;
+    
+}
+
 
 .sectionCatalogo p {
     padding: 2rem;
+    
 
 }
 
@@ -244,19 +277,16 @@ fieldset {
 /* pagina contacto */
 
 .bodyContacto h2 {
-    text-align: center;
     color: whitesmoke;
     font-size: 4vh;
 }
 
 .bodyContacto h3 {
-    text-align: center;
     color: whitesmoke;
     font-size: 3vh;
 }
 
 .bodyContacto p {
-    text-align: center;
     color: whitesmoke;
     font-size: 2vh;
 }
@@ -264,22 +294,32 @@ fieldset {
 
 .hdosDiv {
     grid-area: hdosDiv;
+    display: flex;
+    justify-content: center;
 }
 
 .divSucursalUno {
     grid-area: divSucursalUno;
+    display: flex;
+    justify-content: center;
 }
 
 .divSucursalDos {
     grid-area: divSucursalDos;
+    display: flex;
+    justify-content: center;
 }
 
 .divEmail {
     grid-area: divEmail;
+    display: flex;
+    justify-content: center;
 }
 
 .divWhatsapp {
     grid-area: divWhatsapp;
+    display: flex;
+    justify-content: center;
 }
 
 body .divContacto {
@@ -308,6 +348,7 @@ h2 {
     font-size: 2rem;
     text-align: center;
     color: whitesmoke;
+    display: flex;
 }
 
 p {
@@ -316,11 +357,13 @@ p {
     color: whitesmoke;
     margin: 20px;
     padding: 5px;
+    display: flex;
 }
 
 iframe {
     display: block;
     margin: auto auto;
+    display: flex;
 }
 
 
@@ -342,23 +385,23 @@ iframe {
     #galeria {
         display: grid;
         grid-template-areas:
-            "textoUno"
             "galeriaUno"
-            "textoDos"
             "galeriaDos"
-            "textoTres"
             "galeriaTres"
-            "textoCuatro"
             "galeriaCuatro"
+            "galeriaCinco"
+            "galeriaSeis"
+            "galeriaSiete"
+            "galeriaOcho"
         ;
         grid-template-columns: 100%;
-        row-gap: 3rem;
-
+        row-gap: 2rem;
+        column-gap: 2rem;
     }
 
     #galeria img {
         width: 100%;
-        height: auto;
+
     }
 
 
@@ -382,11 +425,11 @@ iframe {
         ;
         grid-template-columns: 100%;
         grid-gap: 3rem;
-        
+
     }
 
 
-    
+
 
     /* responsive Index */
     #grid1 {
@@ -458,24 +501,6 @@ iframe {
 
 
     /* responsive galeria */
-    #galeria {
-        display: grid;
-        grid-template-areas:
-            "textoUno"
-            "galeriaUno"
-            "textoDos"
-            "galeriaDos"
-            "textoTres"
-            "galeriaTres"
-            "textoCuatro"
-            "galeriaCuatro"
-        ;
-        grid-template-columns: 100%;
-        row-gap: 3rem;
-
-    }
-
-    /* responsive contacto */
     body .sectionContacto {
         display: grid;
         grid-row: auto;
@@ -495,7 +520,57 @@ iframe {
         ;
         grid-template-columns: 100%;
         grid-gap: 3rem;
+        
+
     }
+
+    .hdosDiv {
+       
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .divSucursalUno {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .divSucursalDos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .divEmail {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .divWhatsapp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* responsive contacto */
+    body .sectionContacto {
+        display: grid;
+        grid-row: auto;
+
+        grid-template-areas:
+        "hdosDiv"
+        "divSucursalUno"
+        "divSucursalDos"
+        "divEmail"
+        "divWhatsapp"
+        ;
+        grid-template-columns: 100%;
+        grid-gap: 3rem;
+
+    }
+
 
     /* responsive catalogo */
     .sectionCatalogo {
@@ -516,5 +591,27 @@ iframe {
         row-gap: 2rem;
     }
 
+/* galeria */
 
+    #galeria {
+        display: grid;
+        grid-template-areas:
+            "galeriaUno"
+            "galeriaDos"
+            "galeriaTres"
+            "galeriaCuatro"
+            "galeriaCinco"
+            "galeriaSeis"
+            "galeriaSiete"
+            "galeriaOcho"
+        ;
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+    #galeria img {
+        width: 100%;
+
+    }
 }
